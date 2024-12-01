@@ -1,4 +1,4 @@
-package edu.badpals.model;
+package edu.badpals.baseDatos;
 
 public class Polideportivos {
     private int idPolideportivos;
@@ -37,10 +37,9 @@ public class Polideportivos {
 
     @Override
     public String toString() {
-        return "Polideportivos{" +
-                "idPolideportivos=" + idPolideportivos +
-                ", nombre='" + nombre + '\'' +
-                ", direccion='" + direccion + '\'' +
-                '}';
+        return "Polideportivos | " +
+                "ID: " + idPolideportivos + " | " +
+                "Nombre: " + nombre + " | " +
+                "Dirección: " + direccion;
     }
 }

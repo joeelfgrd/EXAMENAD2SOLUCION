@@ -1,14 +1,14 @@
-package edu.badpals.model;
+package edu.badpals.baseDatos;
 
 public class Reservas {
     private int idReservas;
     private double precio;
-    private Pistas pistas;
+    private Pista pista;
 
-    public Reservas(int idReservas, double precio, int pistas) {
+    public Reservas(int idReservas, double precio, Pista pista) {
         this.idReservas = idReservas;
         this.precio = precio;
-        this.pistas = pistas;
+        this.pista = pista;
     }
 
     public int getIdReservas() {
@@ -27,12 +27,12 @@ public class Reservas {
         this.precio = precio;
     }
 
-    public int getPistas() {
-        return pistas;
+    public Pista getPista() {
+        return pista;
     }
 
-    public void setPistas(int pistas) {
-        this.pistas = pistas;
+    public void setPista(Pista pista) {
+        this.pista = pista;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Reservas {
         return "Reservas{" +
                 "idReservas=" + idReservas +
                 ", precio=" + precio +
-                ", pistas=" + pistas +
+                ", pista=" + pista +
                 '}';
     }
 }

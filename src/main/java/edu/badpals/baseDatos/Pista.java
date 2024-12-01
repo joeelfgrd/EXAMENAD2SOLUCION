@@ -1,4 +1,4 @@
-package edu.badpals.model;
+package edu.badpals.baseDatos;
 
 public class Pista {
 
@@ -7,11 +7,11 @@ public class Pista {
     private boolean operativa;
     private Polideportivos polideportivos;
 
-    public Pista(int idPista, String codigo, boolean operativa, int polideportivos) {
-        this.idPista = idPista;
+    public Pista(String codigo, boolean operativa, Polideportivos polideportivos, int idPista) {
         this.codigo = codigo;
         this.operativa = operativa;
         this.polideportivos = polideportivos;
+        this.idPista = idPista;
     }
 
     public int getIdPista() {
@@ -38,12 +38,12 @@ public class Pista {
         this.operativa = operativa;
     }
 
-    public int getPolideportivos() {
+    public Polideportivos getPolideportivos() {
         return polideportivos;
     }
 
     public void setPolideportivos(Polideportivos polideportivos) {
-        this.polideportivos = polideportivos.getIdPolideportivos();
+        this.polideportivos = polideportivos;
     }
 
     @Override

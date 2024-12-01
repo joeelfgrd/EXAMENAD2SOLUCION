@@ -5,7 +5,7 @@ USE polideportivos;
 
 CREATE TABLE IF NOT EXISTS polideportivos
 (
-	idPodideportivos INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	idPolideportivos INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
 	nombre VARCHAR(50) UNIQUE NOT NULL,
 	direccion VARCHAR(50) NOT NULL
 );
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS reservas
 );
 /* INSERTAR DATOS NAS TABLAS */
 
-INSERT INTO `polideportivos` (`idPodideportivos`, `nombre`,`direccion` ) VALUES 
+INSERT INTO `polideportivos` (`idPolideportivos`, `nombre`,`direccion` ) VALUES 
 (1,'Polideportivo de arriba','Plaza Roja'),
 (2,'Polideportivo de abaixo','Plaza de la Rosa'),
 (3, 'Frontón','Calle del Sol'),
